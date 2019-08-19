@@ -1,3 +1,5 @@
+# Alexander Scott
+
 require 'csv'
 
 puts "Starting..."
