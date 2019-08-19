@@ -4,7 +4,7 @@ This code is used to update and maintain the UMUCTV television station as well a
 
 ### Prerequisites
 
-These are ruby and python files. If you do not have ruby or python installed on your machine you can open a terminal and run this command:
+These are ruby and python files. If you do not have ruby or python installed on your machine you can open a terminal and run these commands:
 
 ```
 sudo apt install ruby
