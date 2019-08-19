@@ -1,3 +1,5 @@
+# Alexander Scott
+
 tsv = list()
 used_dates = list()
 out = open("outtex.txt", "w")
