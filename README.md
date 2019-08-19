@@ -4,10 +4,11 @@ This code is used to update and maintain the UMUCTV television station as well a
 
 ### Prerequisites
 
-These are ruby files. If you do not have ruby installed on your machine you can open a terminal and run this command:
+These are ruby and python files. If you do not have ruby or python installed on your machine you can open a terminal and run this command:
 
 ```
 sudo apt install ruby
+sudo apt install python
 ```
 
 ### How to install
@@ -36,6 +37,17 @@ cd ~/scheduler
 ruby changer.rb
 ```
 This will generate a file in the scheduler folder called out.txt, which can be inputed into the online scheduler.
+
+### texer.py
+
+This is a python file that will generate a .txt file, that can generate a pdf of the schedule from out.txt. In order to run this file you should make sure you have a out.txt file in your scheduler folder, then open a terminal on your machine and run the following commands:
+
+```
+cd ~/scheduler
+python texer.py
+```
+
+This will generate a file called outtex.txt, which you can copy and paste into a online latex editor like Overleaf.com, which will generate a nice pdf of the schedule given by out.txt.
 
 ### shows.csv
 
