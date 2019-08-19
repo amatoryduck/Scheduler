@@ -14,16 +14,15 @@ sudo apt install python
 ### How to install
 Open a terminal on your machine and type the following commands:
 ```
-mkdir ~/scheduler
-cd ~/scheduler
-git pull https://github.com/amatoryduck/scheduler.git
+cd ~
+git clone https://github.com/amatoryduck/Scheduler.git
 ```
 
 ### maker.rb
 
 This ruby file can be run to create a .csv file that is readable by the HyperCaster at UMUC, which will schedule programming. To run this file open a terminal on your machine and run the following commands:
 ```
-cd ~/scheduler
+cd ~/Scheduler
 ruby maker.rb
 ```
 This will open up a command-line interface that allows you to create a schedule based on your input. First, you must select the shows you want to program by entering the number of the series into the command line and then pressing enter. After you have exausted the 24 30-minute chunks to schedule you must then enter a start and end date in the format: DD-MM-YYYY. Once you do this you will have a file in your directory called maker.csv, which you can input into the HyperCaster.
@@ -33,7 +32,7 @@ This will open up a command-line interface that allows you to create a schedule 
 This ruby file takes in the x_list file generated from the HyperCaster, and outputs a file that is readable by the old system that generates the online schedule. To run this file you should make sure you have a x_list file in the scheduler folder, then open up a terminal and run the following commands:
 
 ```
-cd ~/scheduler
+cd ~/Scheduler
 ruby changer.rb
 ```
 This will generate a file in the scheduler folder called out.txt, which can be inputed into the online scheduler.
@@ -43,7 +42,7 @@ This will generate a file in the scheduler folder called out.txt, which can be i
 This is a python file that will generate a .txt file, that can generate a pdf of the schedule from out.txt. In order to run this file you should make sure you have a out.txt file in your scheduler folder, then open a terminal on your machine and run the following commands:
 
 ```
-cd ~/scheduler
+cd ~/Scheduler
 python texer.py
 ```
 
