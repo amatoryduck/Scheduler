@@ -2,8 +2,6 @@
 
 require 'csv'
 
-puts "Starting..."
-
 # Create array to put all new data
 arr = Array.new()
 
@@ -30,7 +28,6 @@ File.open("./x_list.csv", "r") do |f|
 			if date[1].length == 2
 				date[1] = date[1][1]
 			end
-			puts date[1]
 			date = date[1] + '/' + date[2] + '/' + date[0]
 
 			# Change start time data to match website
