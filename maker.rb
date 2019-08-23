@@ -92,10 +92,6 @@ def main
 		choice.push(x)
 	end
 
-	choice.each do |name|
-		#puts name.getName
-	end
-
 	# Get start and end dates to schedule,
 	# Note: these dates are inclusive
 	puts "Enter start date in form DD-MM-YYYY"
